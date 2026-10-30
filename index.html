@@ -24,6 +24,7 @@
   
   <!-- Documentation extras -->
   <link rel="stylesheet" href="css/main.css">
+  <script src="assets/js/news.js" defer></script>
   <link rel="canonical" href="index.html">
   
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,6 +56,7 @@
     </div>
 	<div class="cover-nav btn-panel">
       <ul>
+        <li><a class="btn btn-sm btn-dark btn-round" href="index.html#news" role="button">News</a></li>
         <li><a class="btn btn-sm btn-dark btn-round" href="index.html#background" role="button">Background</a></li>
 		    <li><a class="btn btn-sm btn-dark btn-round" href="index.html#publications" role="button">Publications</a></li>
       </ul>
@@ -71,7 +73,7 @@
 
     </ul>
   </div>
-  <p>&copy; 2019 Yunhe Gao. Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.<br/>Last updated on Feb. 2026.</p>
+  <p>&copy; 2019 Yunhe Gao. Powered by <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>.<br/>Last updated on Oct. 2026.</p>
 </footer>
 
 </div>
@@ -94,6 +96,61 @@
     </address>
 </div>
 </div>
+<section class="news-section" aria-labelledby="news">
+  <h2 id="news">News</h2>
+  <!-- Conference summaries use conference months; acceptance and service announcements use announcement months.
+       Add new items at the top; news.js moves items after the first five into Older news. -->
+  <ul class="news-list" id="news-items">
+    <li class="news-item">
+      <time datetime="2026-10">Oct. 2026</time>
+      <p>Two papers, <strong>CorLIP</strong> and <strong>UniPro</strong>, have been accepted to <strong>NeurIPS 2026</strong>.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-10">Oct. 2026</time>
+      <p>I will serve as an <strong>Area Chair</strong> for <strong>ICLR 2027</strong> and <strong>ICML 2027</strong>.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-09">Sep. 2026</time>
+      <p>One paper at <strong>ECCV 2026</strong>: <a href="https://arxiv.org/abs/2512.18176" target="_blank" rel="noopener noreferrer">Atlas is Your Perfect Context</a>, on one-shot customization of medical image segmentation foundation models.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-06">Jun. 2026</time>
+      <p>Two papers at the <strong>CVPR 2026 main conference</strong>: <a href="https://arxiv.org/abs/2603.13660" target="_blank" rel="noopener noreferrer">MASS</a> and <a href="https://arxiv.org/abs/2603.25250" target="_blank" rel="noopener noreferrer">Activation Matters</a>; and one paper in <strong>CVPR 2026 Findings</strong>: <a href="https://arxiv.org/abs/2604.22989" target="_blank" rel="noopener noreferrer">CheXmix</a>.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-04">Apr. 2026</time>
+      <p>One paper at <strong>ICLR 2026</strong>: <a href="https://proceedings.iclr.cc/paper_files/paper/2026/hash/ecd294194d5155432aab533f7ce0f6fe-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">K-Prism</a>, a knowledge-guided and prompt integrated universal medical image segmentation model.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-03">Mar. 2026</time>
+      <p>One paper at <strong>WACV 2026</strong>: <a href="https://arxiv.org/abs/2511.08402" target="_blank" rel="noopener noreferrer">Anatomy-VLM</a>, a fine-grained vision-language model for medical interpretation.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2025-09">Sep. 2025</time>
+      <p>One paper at <strong>MICCAI 2025</strong>: <a href="https://papers.miccai.org/miccai-2025/0741-Paper3308.html" target="_blank" rel="noopener noreferrer">RadAlign</a>, advancing radiology report generation with vision-language concept alignment.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2025-07">Jul. 2025</time>
+      <p>One paper at <strong>ICML 2025</strong>: <a href="https://proceedings.mlr.press/v267/li25ca.html" target="_blank" rel="noopener noreferrer">The Hidden Life of Tokens</a>, reducing vision-language model hallucination through visual information steering.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2025-06">Jun. 2025</time>
+      <p>One paper at <strong>CVPR 2025</strong>: <a href="https://arxiv.org/abs/2503.19359" target="_blank" rel="noopener noreferrer">Show and Segment</a>, introducing Iris for universal medical image segmentation via in-context learning.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2025-05">May 2025</time>
+      <p>One paper at <strong>IPMI 2025</strong>: <a href="https://arxiv.org/abs/2412.16381" target="_blank" rel="noopener noreferrer">VerSe</a>, integrating multiple queries as prompts for versatile cardiac MRI segmentation.</p>
+    </li>
+    <li class="news-item">
+      <time datetime="2025-04">Apr. 2025</time>
+      <p>One paper at <strong>ICLR 2025</strong>: <a href="https://openreview.net/forum?id=G7u4ue6ncT" target="_blank" rel="noopener noreferrer">Implicit In-Context Learning</a>, reducing in-context inference costs through context vectors.</p>
+    </li>
+  </ul>
+  <details class="news-archive" id="news-archive" hidden>
+    <summary>Older news</summary>
+    <ul class="news-list" id="older-news-items"></ul>
+  </details>
+</section>
 <h2 id="background">Background</h2>
 <div class="entry">
   <div class="timeline">
@@ -206,22 +263,43 @@
   </div>
 </div>
 <h2 id="publications">Selected Publications</h2>
-<p>Please check <a href="https://scholar.google.com/citations?hl=en&user=TOsFPu4AAAAJ" target="_blank">Google Scholar</a> for the full list of my publications.)</p>
+<p>Selected first-author publications. Please see <a href="https://scholar.google.com/citations?hl=en&amp;user=TOsFPu4AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> for the full publication list.</p>
 <div class="entry">
 	<ul class="publist">
-		<div class="pubpanel">
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Aligning Human Knowledge with Visual Concepts Towards Explainable Medical Image Classification</li>
+				<h3 class="title">Learning Generalizable 3D Medical Image Representations from Mask-Guided Self-Supervision</h3>
+				<p><u>Yunhe Gao</u>, Yabin Zhang, Chong Wang, Jiaming Liu, Maya Varma, Jean-Benoit Delbrouck, Akshay Chaudhari, Curtis Langlotz.</p>
+				<p>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026.</p>
+				<ul class="list-inline">
+					<li><a href="https://arxiv.org/abs/2603.13660" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> [Paper]</a></li>
+					<li><a href="https://github.com/Stanford-AIMI/MASS" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-code-o" aria-hidden="true"></i> [GitHub]</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="pubpanel">
+			<div class="pubpanel-body">
+				<h3 class="title">Show and Segment: Universal Medical Image Segmentation via In-Context Learning</h3>
+				<p><u>Yunhe Gao</u>, Di Liu, Zhuowei Li, Yunsheng Li, Dongdong Chen, Mu Zhou, Dimitris N. Metaxas.</p>
+				<p>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025.</p>
+				<ul class="list-inline">
+					<li><a href="https://arxiv.org/abs/2503.19359" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> [Paper]</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="pubpanel">
+			<div class="pubpanel-body">
+				<h3 class="title">Aligning Human Knowledge with Visual Concepts Towards Explainable Medical Image Classification</h3>
 				<p><u>Yunhe Gao</u>, Difei Gu, Mu Zhou, Dimitris Metaxas.</p>
 				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2024. <b>Early Accept.</b></p>
 				<ul class="list-inline">
 					<li><a href="https://arxiv.org/abs/2406.05596" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Training Like a Medical Resident: Universal Medical Image Segmentation via Context Prior Learning</li>
+				<h3 class="title">Training Like a Medical Resident: Context-Prior Learning Toward Universal Medical Image Segmentation</h3>
 				<p><u>Yunhe Gao</u>, Zhuowei Li, Di Liu, Mu Zhou, Shaoting Zhang, Dimitris N. Metaxas.</p>
 				<p>IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024.</p>
 				<ul class="list-inline">
@@ -229,61 +307,31 @@
 					<li><a href="https://github.com/yhygao/universal-medical-image-segmentation" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">LEPARD: Learning Explicit Part Discovery for 3D Articulated Shape Reconstruction</li>
-				<p>Di Liu, Anastasis Stathopoulos, Qilong Zhangli, <u>Yunhe Gao</u>, Dimitris N. Metaxas.</p>
-				<p>Advances in Neural Information Processing Systems (NeurIPS), 2023.</p>
-				<ul class="list-inline">
-					<li><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/a99f50fb024a56d15f057a1830ed0a00-Paper-Conference.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">Visual prompt tuning for test-time domain adaptation</li>
+				<h3 class="title">Visual prompt tuning for test-time domain adaptation</h3>
 				<p><u>Yunhe Gao</u>, Xingjian Shi, Yi Zhu, Hao Wang, Zhiqiang Tang, Xiong Zhou, Mu Li, Dimitris N. Metaxas.</p>
-				<p>Tech Report.</p>
+				<p>arXiv preprint arXiv:2210.04831, 2022.</p>
 				<ul class="list-inline">
 					<li><a href="https://arxiv.org/pdf/2210.04831.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Region proposal rectification towards robust instance segmentation of biological images</li>
-				<p>Qilong Zhangli, Jingru Yi, Di Liu, Xiaoxiao He, Zhaoyang Xia, Qi Chang, Ligong Han, <u>Yunhe Gao</u>, Song Wen, Haiming Tang, He Wang, Mu Zhou, Dimitris Metaxas.</p>
-				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2022. <b>Early Accept.</b></p>
-				<ul class="list-inline">
-					<li><a href="https://arxiv.org/pdf/2203.02846.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">Transfusion: multi-view divergent fusion for medical image segmentation with transformers</li>
-				<p>Di Liu, <u>Yunhe Gao</u>, Qilong Zhangli, Ligong Han, Xiaoxiao He, Zhaoyang Xia, Song Wen, Qi Chang, Zhennan Yan, Mu Zhou, Dimitris Metaxas.</p>
-				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2022. <b>Early Accept.</b> <b>Student Travel Award.</b></p>
-				<ul class="list-inline">
-					<li><a href="https://arxiv.org/pdf/2203.10726.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">A Data-scalable Transformer for Medical Image Segmentation: Architecture, Model Efficiency, and Benchmark</li>
-				<p><u>Yunhe Gao</u>, Mu Zhou, Di Liu, Dimitris Metaxas</u>.</p>
-				<p>Under Review.</p>
+				<h3 class="title">A Data-scalable Transformer for Medical Image Segmentation: Architecture, Model Efficiency, and Benchmark</h3>
+				<p><u>Yunhe Gao</u>, Mu Zhou, Di Liu, Zhennan Yan, Shaoting Zhang, Dimitris N. Metaxas.</p>
+				<p>arXiv preprint arXiv:2203.00131, 2022.</p>
 				<ul class="list-inline">
 					<li><a href="https://arxiv.org/pdf/2203.00131.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 					<li><a href="https://github.com/yhygao/CBIM-Medical-Image-Segmentation" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">UTNet: A Hybrid Transformer Architecture for Medical Image Segmentation</li>
+				<h3 class="title">UTNet: A Hybrid Transformer Architecture for Medical Image Segmentation</h3>
 				<p><u>Yunhe Gao</u>, Mu Zhou, Dimitris Metaxas.</p>
 				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2021.</p>
 				<ul class="list-inline">
@@ -291,31 +339,20 @@
 					<li><a href="https://github.com/yhygao/UTNet" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Enabling data diversity: efficient automatic augmentation via regularized adversarial training</li>
+				<h3 class="title">Enabling data diversity: efficient automatic augmentation via regularized adversarial training</h3>
 				<p><u>Yunhe Gao</u>, Zhiqiang Tang, Mu Zhou, Dimitris N. Metaxas.</p>
 				<p>International Conference on Information Processing in Medical Imaging (IPMI), 2021.</p>
 				<ul class="list-inline">
 					<li><a href="https://arxiv.org/pdf/2103.16493.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Crossnorm and selfnorm for generalization under distribution shifts</li>
-				<p>Zhiqiang Tang, <u>Yunhe Gao</u>, Yi Zhu, Zhi Zhang, Mu Li, Dimitris N. Metaxas.</p>
-				<p>IEEE/CVF International Conference on Computer Vision (ICCV), 2021.</p>
-				<ul class="list-inline">
-					<li><a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Tang_CrossNorm_and_SelfNorm_for_Generalization_Under_Distribution_Shifts_ICCV_2021_paper.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-					<li><a href="https://github.com/amazon-research/crossnorm-selfnorm" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">FocusNetv2: Imbalanced large and small organ segmentation with adversarial shape constraint for head and neck CT images</li>
+				<h3 class="title">FocusNetv2: Imbalanced large and small organ segmentation with adversarial shape constraint for head and neck CT images</h3>
 				<p><u>Yunhe Gao</u>, Rui Huang, Yiwei Yang, Jie Zhang, Kainan Shao, Changjuan Tao, Yuanyuan Chen, Dimitris N Metaxas, Hongsheng Li, Ming Chen.</p>
 				<p>Medical Image Analysis, 2021.</p>
 				<ul class="list-inline">
@@ -323,48 +360,27 @@
 					<li><a href="https://github.com/yhygao/focusnet-v2" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">OnlineAugment: Online Data Augmentation with Less Domain Knowledge</li>
-				<p>Zhiqiang Tang, <u>Yunhe Gao</u>, Leonid Karlinsky, Prasanna Sattigeri, Rogerio Feris, Dimitris Metaxas.</p>
-				<p>European Conference on Computer Vision (ECCV), 2020.</p>
-				<ul class="list-inline">
-					<li><a href="https://arxiv.org/pdf/2007.09271.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-					<li><a href="https://github.com/zhiqiangdon/online-augment" target="_blank"><i class="fa fa-file-code-o"></i><span> [GitHub]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">Vertebrae identification and localization utilizing fully convolutional networks and a hidden Markov model</li>
-				<p>Yizhi Chen, <u>Yunhe Gao</u>, Kang Li, Liang Zhao, Jun Zhao.</p>
-				<p>IEEE Transactions on Medical Imaging, 2019.</p>
-				<ul class="list-inline">
-					<li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8756197" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="pubpanel">
-			<div class="pubpanel-body">
-				<li class="title">FocusNet: imbalanced large and small organ segmentation with an end-to-end deep neural network for head and neck CT images</li>
+				<h3 class="title">FocusNet: imbalanced large and small organ segmentation with an end-to-end deep neural network for head and neck CT images</h3>
 				<p><u>Yunhe Gao</u>, Rui Huang, Ming Chen, Zhe Wang, Jincheng Deng, Yuanyuan Chen, Yiwei Yang, Jie Zhang, Chanjuan Tao, Hongsheng Li.</p>
 				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2019. <b>Early Accept.</b> </p>
 				<ul class="list-inline">
 					<li><a href="https://arxiv.org/pdf/1907.12056.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="pubpanel">
+		</li>
+		<li class="pubpanel">
 			<div class="pubpanel-body">
-				<li class="title">Multi-resolution path cnn with deep supervision for intervertebral disc localization and segmentation</li>
+				<h3 class="title">Multi-resolution path cnn with deep supervision for intervertebral disc localization and segmentation</h3>
 				<p><u>Yunhe Gao</u>, Chang Liu, Liang Zhao</p>
 				<p>International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2019. <b>Early Accept.</b></p>
 				<ul class="list-inline">
 					<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-32245-8_35" target="_blank"><i class="fa fa-file-pdf-o"></i><span> [Paper]<span></span></span></a></li>
 				</ul>
 			</div>
-		</div>
+		</li>
 	</ul>
 </div>
 
